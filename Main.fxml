@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <bottom>
+      <VBox prefHeight="65.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="48.0" prefWidth="600.0" spacing="15" stylesheets="@application.css">
+               <children>
+                  <Button fx:id="stop" mnemonicParsing="false" onAction="#stop">
+                     <HBox.margin>
+                        <Insets left="220.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="play" mnemonicParsing="false" onAction="#play">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="pause" mnemonicParsing="false" onAction="#pause">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="fast" mnemonicParsing="false" onAction="#fast">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="slow" mnemonicParsing="false" onAction="#slow">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="silent" mnemonicParsing="false" onAction="#mute">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Slider fx:id="volumeSlider" prefHeight="14.0" prefWidth="105.0">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mv" fitHeight="200.0" fitWidth="200.0" />
+            <Slider fx:id="seekSlider" StackPane.alignment="BOTTOM_CENTER" />
+            <Button fx:id="file" mnemonicParsing="false" onAction="#fileChooser" stylesheets="@application.css" text="File" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

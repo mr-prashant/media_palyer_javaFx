@@ -1,0 +1,61 @@
+#play
+{
+	
+	-fx-background-image: url("../images/play.png") ;
+	-fx-background-position: center;
+	-fx-background-size: 20 20;
+	-fx-background-repeat: no-repeat ;
+	-fx-border-radius: 50%;
+	-fx-background-color: transparent ;
+	
+}
+#pause
+{
+	
+	-fx-background-image: url("../images/pause.png") ;
+	-fx-background-position: center;
+	-fx-background-size: 20 20;
+	-fx-background-repeat: no-repeat ;
+	-fx-border-radius: 50%;
+	-fx-background-color: transparent ;
+	
+}
+#fast
+{
+	
+	-fx-background-image: url("../images/fast.png") ;
+	-fx-background-position: center;
+	-fx-background-size: 20 20;
+	-fx-background-repeat: no-repeat ;
+	-fx-border-radius: 50%;
+	
+}
+#slow
+{
+	
+	-fx-background-image: url("../images/slow.png") ;
+	-fx-background-position: center;
+	-fx-background-size: 20 20;
+	-fx-background-repeat: no-repeat ;
+	-fx-border-radius: 50%;
+	
+}
+#stop
+{
+	
+	-fx-background-image: url("../images/stop.png") ;
+	-fx-background-position: center;
+	-fx-background-size: 20 20;
+	-fx-background-repeat: no-repeat ;
+	-fx-border-radius: 50%;
+	
+}
+
+#silent
+{
+	-fx-background-image: url("../images/silent.png");
+	-fx-background-position: center;
+	-fx-background-size: 15 15;
+	-fx-background-repeat: no-repeat ;
+	-fx-border-radius: 50%;
+}
